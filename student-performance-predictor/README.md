@@ -152,7 +152,7 @@ Performance Level: Excellent
 
 ## Sample Output
 
-![Student Performance Predictor - Sample Output](images/prediction-output.png)
+![Student Performance Predictor - Sample Output](./images/prediction-output.png)
 
 ## Technologies Used
 
