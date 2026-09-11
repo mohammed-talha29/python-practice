@@ -11,7 +11,7 @@ The project includes:
 - Synthetic student dataset generation
 - Exploratory Data Analysis (EDA)
 - Linear Regression model training
-- Model evaluation using R² and MAE
+- Model evaluation using R2 and MAE
 - 5-fold cross-validation
 - Prediction error analysis
 - Interactive student score prediction
@@ -39,11 +39,11 @@ The project uses:
 
 Linear Regression was selected after comparing model performance.
 
-Final model performance:
+### Final Model Performance
 
-- **Average R² Score:** 0.936
+- **Average R2 Score:** 0.936
 - **Average MAE:** 2.247
-- **R² Standard Deviation:** 0.019
+- **R2 Standard Deviation:** 0.019
 - **MAE Standard Deviation:** 0.281
 
 The model explains approximately 93.6% of the variation in final scores during 5-fold cross-validation.
@@ -54,22 +54,23 @@ The average prediction error is approximately 2.25 points.
 
 ```text
 student-performance-predictor/
-│
-├── data/
-│   └── students.csv
-│
-├── images/
-│   └── prediction-output.png
-│
-├── generate_data.py
-├── eda.py
-├── train_model.py
-├── cross_validation.py
-├── error_analysis.py
-├── predict.py
-├── predictor.py
-├── student_model.pkl
-└── README.md
+|
++-- data/
+|   +-- students.csv
+|
++-- images/
+|   +-- prediction-output.png
+|
++-- generate_data.py
++-- eda.py
++-- train_model.py
++-- cross_validation.py
++-- error_analysis.py
++-- predict.py
++-- predictor.py
++-- student_model.pkl
++-- README.md
+```
 
 ## Dataset
 
@@ -102,9 +103,9 @@ These relationships were also examined using correlation analysis.
 
 The model was evaluated using:
 
-### R² Score
+### R2 Score
 
-R² measures how much of the variation in the target variable is explained by the model.
+R2 measures how much of the variation in the target variable is explained by the model.
 
 Higher values indicate better performance.
 
@@ -118,7 +119,7 @@ Lower values indicate better performance.
 
 The final model was evaluated using 5-fold cross-validation.
 
-| Fold | R² | MAE |
+| Fold | R2 | MAE |
 |---|---:|---:|
 | 1 | 0.911 | 2.411 |
 | 2 | 0.947 | 2.159 |
@@ -132,6 +133,7 @@ The final model was evaluated using 5-fold cross-validation.
 ```text
 Student Performance Predictor
 -----------------------------
+
 Enter study hours per day: 6
 Enter attendance percentage: 90
 Enter previous score: 85
@@ -146,8 +148,7 @@ Assignment Score: 88.0
 
 Predicted Final Score: 100
 Performance Level: Excellent
-
-
+```
 
 ## Sample Output
 
@@ -214,6 +215,13 @@ Possible improvements include:
 - Deploying the model as a web application
 - Adding automated model retraining
 - Improving prediction calibration near the 100-point limit
+
+## Limitations
+
+- The dataset is synthetic and may not represent real-world student performance.
+- Linear Regression may not capture complex relationships between student characteristics.
+- Predictions are limited to the 0-100 score range.
+- The model should not be used as a real academic assessment system.
 
 ## Disclaimer
 
